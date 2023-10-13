@@ -32,7 +32,6 @@
             flex-wrap:wrap;
             width:100%;
         }
-       
         .leftCol{
             width:20%;
             position: fixed;
@@ -80,7 +79,7 @@
         .center{
             color:white;
         }
-      .background div >h1{
+       .background div >h1{
         margin: 0;
         text-align: center;
         font-family: 'Alex';
@@ -102,7 +101,6 @@
       }
       .row1{
         width:100%;
-        
         text-align: center;
       }
       .subrow1{
@@ -115,15 +113,12 @@
       }
       .subrow1 p{
         font-family: 'Rubik';
+        text-align: justify;
       }
       .row2{
-        
         width:90%;
-       
        margin: auto;
-        /* color:white; */
         border-top:5px solid red;
-        
       }
       .aboutus h1{
          display:inline-block;
@@ -133,14 +128,13 @@
         color: white;
         font-family: 'Rubik';
       }
-    .subrow2{
+     .subrow2{
         display:flex;
         flex-wrap:wrap;
         margin-top: 20px;
-    }
+     }
     .subrow2 > .img1,.subrow2 > .img2,.subrow2 > .img3{
         width:33.3333333%;
-       
     }
     .img2 .column2{
         display: flex;
@@ -169,7 +163,6 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    /* height: 320px; */
    }
    .row3col1{
     width:70%;
@@ -187,10 +180,8 @@
     align-items: center;
     display: flex;
     justify-content: flex-end;
-   
     padding: 10px;
 }
-   
    .row4{
     width:90%;
     margin: auto;
@@ -207,15 +198,12 @@
    .subservices{
     display: flex;
     flex-wrap: wrap;
-    margin-top:10px
-     
+    margin-top:10px;
    }
    .subservices .light,.subservices .response,.subservices .pencil{
     width:33.3333333%;
     display: flex;
-   
    }
-  
    .subservices .response{
     display: flex;
     justify-content:center;
@@ -249,7 +237,6 @@
     margin:auto;
     display:flex;
     flex-wrap:wrap;
-   
 }
    .sidehead{
     width:60%;
@@ -260,13 +247,13 @@
    }
    .sidehead p{
     font-family: 'Rubik';
+    text-align: justify;
    }
    .rank{
     width:40%;
     width: 40%;
     display: grid;
     align-items: center;
-    
    }
    .rank1{
     background-color: aliceblue;
@@ -319,7 +306,6 @@
     display: flex;
     flex-wrap:wrap;
     margin-top: 20px;
-   
    }
    .newRow1 .col1,.newRow1 .col2,.newRow1 .col3,.newRow2 .col4,.newRow2 .col5,.newRow2 .col6{
     width:33.333333%;
@@ -332,7 +318,6 @@
     display: flex;
     justify-content: flex-end;
    }
-  
    .name{
     text-align: center;
    }
@@ -348,7 +333,6 @@
       margin: 0;
       font-family: 'Rubik';
    }
-
    .row7{
     width:90%;
     margin: auto;
@@ -375,7 +359,6 @@
    .row8{
     width: 90%;
     margin: auto;
-
    }
    .form1{
     display: flex;
@@ -383,7 +366,6 @@
     width: 100%;
     margin-top: 20px;
    }
-
    .form1 .name1,.form1 .email,.form1 .subject{
     width:33.3333333%;
     color: #ff005a;
@@ -437,7 +419,6 @@
    }
    .icon{
     width: 98%;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -445,8 +426,7 @@
     background-color: #ffffff;
     height: 150px;
     margin-left: 2%;
-}
-   
+   }
    .icon > div{
     margin: 10px;
    }
@@ -457,13 +437,11 @@
    .end{
     width: 100%;
     height: 100px;
-    /* align-items: center; */
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-}
-   
+   }
    .end div{
     color: white;
     text-align: center;
@@ -471,40 +449,143 @@
     margin: 5px;
     font-family: 'Rubik';
    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media(max-width:992px){
+.row5,.row1 ,.row2,.row3,.row4,.row6,.row7,.row8 {
+    margin-bottom: 20px;
+}
+ .row3col1 {
+    width: 100%;
+}
+.row3col1 h1 {
+    text-align: center;
+}
+.row3col2 {
+    width: 100%;
+    justify-content: center;
+}
+.sidehead {
+    width: 100%;
+}
+.sidehead h1 {
+    text-align: center;
+}
+.rank {
+    width:100%;
+    margin: auto;
+}
+.rank1 {
+    margin: 10px;
+}
+.form1 ,.form2 {
+    width: 90%;
+    margin: auto;
+}
+.form1 .name1, .form1 .email, .form1 .subject{
+    width:100%;
+}
+[type=text], [type=email], select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+[type=submit]{
+    width:40%;
+    margin-left: 10px;
+}
+}
+ @media(max-width:768px){
+    .menu > a{
+        font-size: large;
+    }
+     .background{
+        height: 460px;
+     }
+     .background div >h1{
+        font-size: xx-large;
+     }
+     .background div > p {
+        font-size: large;
+     }
+     .aboutus h1 {
+        font-size: large;
+     }
+     .subrow2 > .img1, .subrow2 > .img2, .subrow2 > .img3 {
+    width: 100%;
+     }
+.img1 .column1,.img3 .column3 {
+    display: flex;
+    justify-content: center;
+}
+.row3col1 {
+    width: 100%;
+}
+.row3col2{
+    width:100%;
+    justify-content: center;
+}
+.row3col1 h1{
+    text-align: center;
+}
+.subservices .light, .subservices .response, .subservices .pencil {
+    width: 100%;
+}
+.subservices .light,.subservices .pencil{
+    justify-content: center;
+}
+.light h3, .response h3, .pencil h3{
+    width:90%;
+}
+.row5,.row1 ,.row2,.row3,.row4,.row6,.row7,.row8 {
+    margin-bottom: 20px;
+}
+.sidehead{
+    width:100%;
+}
+.sidehead h1 {
+    text-align: center;
+}
+.rank{
+    width:100%;
+}
+.rank1 {
+    margin: 10px;
+}
+.newRow1 .col1, .newRow1 .col2, .newRow1 .col3, .newRow2 .col4, .newRow2 .col5, .newRow2 .col6{
+    width:100%;
+}
+.col1 .fanta1, .col4 .fant4 {
+    display: flex;
+}
+.col1 .fanta1, .col2 .fanta2, .col3 .fanta3, .col4 .fant4, .col5 .fanta5, .col6 .fanta6 {
+    justify-content: center;
+}
+.form1 ,.form2 {
+    width: 90%;
+    margin: auto;
+}
+.form1 .name1, .form1 .email, .form1 .subject{
+    width:100%;
+}
+[type=text], [type=email], select, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+[type=submit]{
+    width:40%;
+    margin-left: 10px;
+}
+.end div {
+    font-size: small;
+}
+}
    @media(max-width:576px){
-
      .company h1{
         font-size:medium;
      }
      .logo {
     margin-top: 5px;
-}
-   /* .leftCol{
-    width: 30%;
-   }
-
-   .rightCol{
-    width: 70%;
-    margin-left: 30%;
-   } */
+    }
    .menu > a{
     font-size: xx-small;
     margin: 5px;
@@ -531,7 +612,6 @@
 .subrow1 h1 {
     font-size: small;
 }
-
 .subrow1 p{
     font-size: x-small;
     text-align: center;
@@ -539,7 +619,6 @@
 .aboutus h1 ,.port > h1 ,.services h1,.contact h1{
     padding: 5px;
     font-size: medium;
-
 }
 .subrow2 > .img1, .subrow2 > .img2, .subrow2 > .img3 {
     width:100%;
@@ -551,7 +630,6 @@
 .img3 .column3 {
     justify-content: center;
 }
-
 .imgpara h2 {
     font-size: medium;
 }
@@ -560,25 +638,20 @@
 }
 .row3{
     height: 700px;
-    
     text-align: justify;
     padding: 5px;
 }
-
 .row3col1 h1 {
     font-size: large;
     text-align: center;
 }
-
 .row3col1 p {
     font-size: smaller;
     margin: 0;
 }
-
 .row3col1 {
     width: 100%;
 }
-
 .row3col2 {
     width: 100%;
     justify-content: center;
@@ -589,19 +662,15 @@
 .row4{
     border-top: 2px solid darkblue
 }
-
-
 .subservices .light, .subservices .response, .subservices .pencil{
     width:100%;
 }
-
 .light h3, .response h3, .pencil h3 {
     padding: 5px;
     font-size: small;
     width: 90%;
 }
 .subservices .light,.subservices .pencil{
-   
     justify-content:center;
 }
 .row5{
@@ -632,7 +701,6 @@
 .row6 {
     border-top: 2px solid red;
 }
-
 .newRow1 .col1, .newRow1 .col2, .newRow1 .col3, .newRow2 .col4, .newRow2 .col5, .newRow2 .col6 {
     width:100%;
 }
@@ -643,7 +711,6 @@
     justify-content: center;
 }
 .row7 {
-  
     border-top: 2px solid rgb(3, 110, 129);
 }
 .name h2 {
@@ -685,24 +752,8 @@
     font-size: small;
   
 }
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-    </style>
+   </style>
 </head>
 <body>
     <div class="whole" id="home">
@@ -725,19 +776,14 @@
                 <div class="background">
                     <div class="center">
                             <h1>Elevate Your Digital Presence</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur aliquid eos vero dicta commodi assumenda? Optio quidem ad corrupti odio sed at, accusamus dolorem, voluptas odit assumenda adipisci repellendus!</p>
-                       
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Quaerat pariatur aliquid eos vero dicta commodi assumenda? Optio quidem ad corrupti odio sed at,
+                                  accusamus dolorem, voluptas odit assumenda adipisci repellendus!</p>
                     </div>  
                     <div>
                         <button type="button">Load More</button>
                     </div>
                 </div>
-
-
-
-
-          
-
                 <div class="row1">
                     <div class="subrow1">
                        <h1>welcome</h1>
@@ -746,16 +792,10 @@
                         into an impactful online presence.</p>
                     </div>
                 </div>
-
-
-
-
                 <div class="row2" id="about">
                     <div class="aboutus"> 
                     <h1>About Us</h1>
                     </div>
-
-
                     <div class="subrow2">
                             <div class="img1">
                                     <div class="column1">
@@ -784,15 +824,9 @@
                                         <h3>Marketing director</h3>
                                  </div>
                             </div>
-
                     </div>
                  </div>
-     
-
-
-
                  <div class="row3">
-                     
                     <div class="row3col1">
                        <h1>Our Management Team</h1>
                        <p>
@@ -810,9 +844,6 @@
                        <img src="photo/52696786199391e36373fe561cb9864d.jpg_720x720q80.jpg" width="90%" alt="">
                     </div>
                  </div>
-
-
-
            <div class="row4" id="service"> 
                  <div class="services">
                      <h1>Services</h1>
@@ -829,10 +860,6 @@
                       </div>
                  </div>
            </div>
-
-
-
-
         <div class="row5">
              <div class="sidehead">
                 <h1>Our Skills</h1>
@@ -863,9 +890,6 @@
                 </div>
              </div>
         </div>
-
-
-
 <div class="row6" id="portfol">
           <div class="portfolio">
                <div class="port">
@@ -924,14 +948,7 @@
                     </div>
                 </div>
             </div>
-         
 </div>
-
-
-
-
-
-
         <div class="row7" id="contactus">
             <div row="us">
                 <div class="contact">
@@ -942,8 +959,6 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4012924.123838464!2d78.28976490000001!3d10.821166349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697055838406!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-
-
        <div class="row8">
             <div class="form">
                     <form class="form1">
@@ -975,12 +990,8 @@
                         <input type="submit" name="sentmsg" value="Send Message">
                     </div>
                </form>
-
             </div>
        </div>
-
-
-
        <div class="beforeEnd">
              <div class="icon">
                   <div class="imgicon">
@@ -1004,69 +1015,8 @@
                 <div>Copyright © DreamyDesigns 2023</div>
                 <div >All Rights Reserved</div>
              </div>
-       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                 <!-- rightcol -->
-            </div>
-             
-
-
-
-          
-            
-         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+       </div> 
     </div>
+</div>
 </body>
 </html>
