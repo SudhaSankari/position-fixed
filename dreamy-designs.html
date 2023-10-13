@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamyDesigns</title>
+    <style>
+        @font-face{
+            font-family: 'zeyada';
+            src:url(font/Zeyada-Regular.ttf);
+        }
+        @font-face{
+            font-family: 'Alex';
+            src:url(font/SZc83FzrJKuqFbwMKk6EtUL57DtOmCc.ttf);
+        }
+        @font-face{
+            font-family:'Rubik';
+            src:url(font/Rubik-VariableFont_wght.ttf);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        img{
+            max-width:100%;
+        }
+        body{
+            margin: 0;
+        }
+        .whole{
+            background-color: #cdb9f1;
+            display:flex;
+            flex-wrap:wrap;
+            width:100%;
+        }
+       
+        .leftCol{
+            width:20%;
+            position: fixed;
+            height: 100vh;
+            background-color: #0a011b;
+        }
+        .company{
+            color:white;
+            text-align: center;
+            font-family: 'zeyada';
+            text-shadow: 0px 0px 5px yellow;
+        }
+        .company h1:hover{
+            transform: scale(1.5,1.5);
+            transition: transform 3s linear;
+        }
+        .logo{
+            margin-top: 40px;
+        }
+        .rightCol{
+            width:80%;
+            margin-left: 20%;
+        }
+        .menu > a{
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: white;
+            font-size: x-large;
+            margin: 10px;
+            border-bottom: 1px solid grey;
+            font-family: 'Rubik';
+        }
+        .background{
+            background-image: url(photo/wallpaper2you_402685.jpg);
+            background-position: center center;
+            width: 100%;
+            height: 575px;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+        }
+        .center{
+            color:white;
+        }
+      .background div >h1{
+        margin: 0;
+        text-align: center;
+        font-family: 'Alex';
+        font-size: xxx-large;
+        text-shadow: 5px 6px 10px BLACK;
+      }
+      .background div > p{
+        text-align: center;
+        font-family: 'Alex';
+        font-size: x-large;
+        text-shadow: 0px 0px 6px BLACK;
+        padding: 10px;
+      }
+      [type=button]{
+        color: white;
+        background-color: greenyellow;
+        padding:10px;
+        border:greenyellow;
+      }
+      .row1{
+        width:100%;
+        
+        text-align: center;
+      }
+      .subrow1{
+        width:90%;
+        margin: auto;
+      }
+      .subrow1 h1{
+        color: #79088d;
+        font-family: 'Rubik';
+      }
+      .subrow1 p{
+        font-family: 'Rubik';
+      }
+      .row2{
+        
+        width:90%;
+       
+       margin: auto;
+        /* color:white; */
+        border-top:5px solid red;
+        
+      }
+      .aboutus h1{
+         display:inline-block;
+         background-color: rgb(240, 76, 76);
+        margin: 0;
+        padding: 10px;
+        color: white;
+        font-family: 'Rubik';
+      }
+    .subrow2{
+        display:flex;
+        flex-wrap:wrap;
+        margin-top: 20px;
+    }
+    .subrow2 > .img1,.subrow2 > .img2,.subrow2 > .img3{
+        width:33.3333333%;
+       
+    }
+    .img2 .column2{
+        display: flex;
+        justify-content: center;
+    }
+    .img3 .column3{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .imgpara{
+        padding:10px;
+        text-align: center;
+    }
+   .imgpara h2,.imgpara h3{
+    margin: 0;
+    font-family: 'Rubik';
+   }
+   .imgpara h2{
+    color:red;
+   }
+   .imgpara h3{
+    color:rgb(79, 34, 34);
+   }
+   .row3{
+    width:90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    height: 360px;
+   }
+   .row3col1{
+    width:70%;
+   }
+   .row3col1 h1{
+    color: #E91E63;
+    font-family: 'Rubik';
+   }
+   .row3col1 p{
+    font-family: 'Rubik';
+   }
+   .row3col2{
+    width:30%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+   }
+   .row4{
+    width:90%;
+    margin: auto;
+    border-top: 5px solid darkblue;
+   }
+   .services h1{
+    background-color: blue;
+    display:inline-block;
+    margin:0;
+    padding: 10px;
+    color:white;
+    font-family: 'Rubik';
+   }
+   .subservices{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:10px
+     
+   }
+   .subservices .light,.subservices .response,.subservices .pencil{
+    width:33.3333333%;
+    display: flex;
+    /* padding: 10px; */
+    /* text-align: center; */
+    /* background-color: blue; */
+   }
+  
+   .subservices .response{
+    display: flex;
+    justify-content:center;
+   }
+   .subservices .pencil{
+    display: flex;
+    justify-content: flex-end;
+   }
+   .light h3,.response h3,.pencil h3{
+    background-color: blueviolet;
+    padding: 15px;
+    font-size: larger;
+    font-family: 'Rubik';
+   }
+   .light h3::before{
+    content:"\1F5F2";
+    color: white;
+    padding: 5px;
+   }
+   .pencil h3::before{
+    content: "\1F589";
+    color: white;
+    padding: 5px;
+   }
+   .response h3::before{
+    content:"\1F4BB";
+    padding: 5px;
+   }
+   .row5{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-wrap:wrap;
+   
+}
+   .sidehead{
+    width:60%;
+   }
+   .sidehead h1{
+    color: #E91E63;
+    font-family: 'Rubik';
+   }
+   .sidehead p{
+    font-family: 'Rubik';
+   }
+   .rank{
+    width:40%;
+    width: 40%;
+    display: grid;
+    align-items: center;
+    
+   }
+   .rank1{
+    background-color: aliceblue;
+    border-radius: 5px;
+   }
+   .rank1 .one{
+   font-size: medium;
+   background-color: brown;
+   width: 90%;
+   color:white;
+   padding:2px;
+  border-radius: 5px 0 0 5px;
+   }
+   .rank1 .two{
+    font-size: medium;
+   background-color: rgb(174, 15, 121);
+   width: 75%;
+   color:white;
+   padding-left:2px;
+   border-radius: 5px 0 0 5px;
+   }
+   .rank1 .three{
+    font-size: medium;
+   background-color: rgb(49, 6, 44);
+   width: 66%;
+   color:white;
+   padding:2px;
+   border-radius: 5px 0 0 5px;
+   }
+   .rank1 .four{
+    font-size: medium;
+   background-color: rgb(29, 191, 213);
+   width: 88%;
+   color:white;
+   padding:2px;
+   border-radius: 5px 0 0 5px;
+   }
+   .one p,.two p,.three p,.four p{
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Rubik';
+   }
+   .row6{
+    width:90%;
+    margin: auto;
+    border-top: 5px solid red;
+   }
+    .newRow1,.newRow2{
+    display: flex;
+    flex-wrap:wrap;
+    margin-top: 20px;
+   
+   }
+   .newRow1 .col1,.newRow1 .col2,.newRow1 .col3,.newRow2 .col4,.newRow2 .col5,.newRow2 .col6{
+    width:33.333333%;
+   }
+   .col2 .fanta2,.col5 .fanta5{
+    display: flex;
+    justify-content: center;
+   }
+   .col3 .fanta3,.col6 .fanta6{
+    display: flex;
+    justify-content: flex-end;
+   }
+  
+   .name{
+    text-align: center;
+   }
+   .name h2{
+    font-family: 'Rubik';
+    color: #00BCD4;
+   }
+   .port > h1{
+      background-color: rgb(243, 51, 51);
+      color:white;
+      display:inline-block;
+      padding: 10px;
+      margin: 0;
+      font-family: 'Rubik';
+   }
+
+   .row7{
+    width:90%;
+    margin: auto;
+    border-top:5px solid rgb(3, 110, 129);
+   }
+   .map iframe{
+    width:100%;
+    height: 400px;
+    margin-top: 20px;
+    padding:5px;
+    margin-bottom: 20px;
+   }
+   iframe{
+    border:solid rgb(175, 170, 170) 0.5px;
+   }
+   .contact h1{
+      background-color: rgb(26, 214, 235);
+      display: inline-block;
+      margin: 0;
+      padding:10px;
+      color:white;
+      font-family: 'Rubik';
+   }
+   .row8{
+    width: 90%;
+    margin: auto;
+
+   }
+   .form1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+   }
+
+   .form1 .name1,.form1 .email,.form1 .subject{
+    width:33.3333333%;
+    color: #ff005a;
+    font-family: 'Rubik';
+   }
+    .form2{
+        margin-top: 20px;
+    }
+    .msg{
+        color: #ff005a;
+        font-family: 'Rubik';
+      }
+   textarea{
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+   }
+   [type=text],[type=email],select{
+    background-color: rgb(6, 6, 6);
+    border: rgb(252, 255, 255);
+    width: 70%;
+    height: 35px;
+    color:white;
+    font-size: medium;
+    font-family: 'Rubik';
+    border-radius: 5px;
+   }
+   textarea{
+    background-color: rgb(6, 6, 6);
+    border: rgb(252, 255, 255);
+    color: white;
+    font-size: large;
+    font-family: 'Rubik';
+    border-radius: 5px;
+   }
+   [type=submit]{
+    background-color: purple;
+    border: purple;
+    height: 35px;
+    width: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+    font-family: 'Rubik';
+   }
+   .beforeEnd{
+    width: 100%;
+   background-color: black;
+   }
+   .icon{
+    width: 98%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    height: 150px;
+    margin-left: 2%;
+}
+   
+   .icon > div{
+    margin: 10px;
+   }
+   .imgicon img{
+    background-color: white;
+    border-radius: 50%;
+   }
+   .end{
+    width: 100%;
+    height: 100px;
+    /* align-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+   
+   .end div{
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-family: 'Rubik';
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media(max-width:576px){
+
+     .company h1{
+        font-size:medium;
+     }
+     .logo {
+    margin-top: 5px;
+}
+   /* .leftCol{
+    width: 30%;
+   }
+
+   .rightCol{
+    width: 70%;
+    margin-left: 30%;
+   } */
+   .menu > a{
+    font-size: xx-small;
+    margin: 5px;
+   }
+.background{
+    height: 220px;
+}
+.center{
+    width:90%;
+}
+.background div >h1 {
+    font-size: small;
+}
+.background div >p{
+    font-size: xx-small;
+} 
+[type=button] {
+    padding: 5px;
+    font-size: x-small;
+}
+.row2{
+    border-top: 2px solid red;
+}
+.subrow1 h1 {
+    font-size: small;
+}
+
+.subrow1 p{
+    font-size: x-small;
+    text-align: center;
+}
+.aboutus h1 ,.port > h1 ,.services h1,.contact h1{
+    padding: 5px;
+    font-size: medium;
+
+}
+.subrow2 > .img1, .subrow2 > .img2, .subrow2 > .img3 {
+    width:100%;
+}
+.img1 .column1{
+    display: flex;
+    justify-content: center;
+}
+.img3 .column3 {
+    justify-content: center;
+}
+
+.imgpara h2 {
+    font-size: medium;
+}
+.imgpara h3 {
+    font-size: small;
+}
+.row3{
+    height: 800px;
+    
+    text-align: justify;
+    padding: 5px;
+}
+
+.row3col1 h1 {
+    font-size: large;
+    text-align: center;
+}
+
+.row3col1 p {
+    font-size: small;
+}
+
+.row3col1 {
+    width: 100%;
+}
+
+.row3col2 {
+    width: 100%;
+
+}
+.row4{
+    border-top: 2px solid darkblue
+}
+
+
+.subservices .light, .subservices .response, .subservices .pencil{
+    width:100%;
+}
+
+.light h3, .response h3, .pencil h3 {
+    padding: 5px;
+    font-size: small;
+    width: 90%;
+}
+.subservices .light,.subservices .pencil{
+   
+    justify-content:center;
+}
+.row5{
+    margin-bottom: 10px;
+}
+.sidehead {
+    width: 100%;
+}
+.sidehead h1 {
+    font-size: large;
+    text-align: center;
+}
+.sidehead p {
+    font-size: small;
+    padding: 5px;
+    text-align: justify;
+}
+.rank {
+    width:100%;
+}
+.rank1 {
+    margin: 5px;
+}
+.one p, .two p, .three p, .four p {
+    font-size: small;
+    padding: 2px;
+}
+.row6 {
+    border-top: 2px solid red;
+}
+
+.newRow1 .col1, .newRow1 .col2, .newRow1 .col3, .newRow2 .col4, .newRow2 .col5, .newRow2 .col6 {
+    width:100%;
+}
+.col1 .fanta1,.col4 .fant4{
+    display: flex;
+}
+.col1 .fanta1,.col2 .fanta2,.col3 .fanta3,.col4 .fant4,.col5 .fanta5,.col6 .fanta6{
+    justify-content: center;
+}
+.row7 {
+  
+    border-top: 2px solid rgb(3, 110, 129);
+}
+.name h2 {
+    font-size: medium;
+}
+.map iframe {
+    height: 200px;
+}
+.form1 .name1, .form1 .email, .form1 .subject{
+    width:100%;
+}
+[type=text], [type=email], select ,textarea{
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+[type=submit] {
+    font-size: x-small;
+    width:40%;
+}
+.imgicon img {
+    width:60%;
+}
+.icon{
+    height: 100px;
+}
+.icon > div {
+    margin: 0px;
+    justify-content: center;
+    display: flex;
+}
+.icon > .imgicon{
+    width:20%;
+}
+.end{
+    height: 150px;
+}
+.end div  {
+    font-size: small;
+  
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="whole" id="home">
+            <div class="leftCol">
+                <div class="company">
+                     <h1>Dreamy Designs</h1>
+                </div>
+                <div class="logo">
+                     <img src="photo/pngegg.png" width="100%" alt="logo">
+                </div>
+                <div class="menu"> 
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#service">Services</a>
+                    <a href="#portfol">Portfolio</a>
+                    <a href="#contactus">Contact</a>
+                </div>
+            </div>
+            <div class="rightCol"> 
+                <div class="background">
+                    <div class="center">
+                            <h1>Elevate Your Digital Presence</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat pariatur aliquid eos vero dicta commodi assumenda? Optio quidem ad corrupti odio sed at, accusamus dolorem, voluptas odit assumenda adipisci repellendus!</p>
+                       
+                    </div>  
+                    <div>
+                        <button type="button">Load More</button>
+                    </div>
+                </div>
+
+
+
+
+          
+
+                <div class="row1">
+                    <div class="subrow1">
+                       <h1>welcome</h1>
+                       <p>Where creativity meets strategy to craft exceptional digital experiences. 
+                        We're a team of dedicated designers, developers, and branding experts committed to transforming your vision 
+                        into an impactful online presence.</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="row2" id="about">
+                    <div class="aboutus"> 
+                    <h1>About Us</h1>
+                    </div>
+
+
+                    <div class="subrow2">
+                            <div class="img1">
+                                    <div class="column1">
+                                        <img src="photo/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg" width="90%" alt="">
+                                    </div>
+                                    <div class="imgpara">
+                                        <h2>Keth</h2>
+                                        <h3>Company President</h3>
+                                    </div>
+                            </div>
+                            <div class="img2">
+                                   <div class="column2">
+                                        <img src="photo/woman-smiling-office-600x400.jpg" width="90%" alt="">
+                                   </div>
+                                <div class="imgpara">
+                                      <h2>Emaline</h2>
+                                      <h3>Creative Executive</h3>
+                                </div>
+                            </div>
+                            <div class="img3">
+                                    <div class="column3">
+                                    <img src="photo/depositphotos_412119456-stock-photo-young-businessman-working-laptop-office.jpg" width="90%" alt="">
+                                    </div>
+                                  <div class="imgpara">
+                                        <h2>Noah</h2>
+                                        <h3>Marketing director</h3>
+                                 </div>
+                            </div>
+
+                    </div>
+                 </div>
+     
+
+
+
+                 <div class="row3">
+                     
+                    <div class="row3col1">
+                       <h1>Our Management Team</h1>
+                       <p>
+                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                         Optio, a obcaecati velit molestias mollitia quos blanditiis ullam laudantium quaerat repellendus pariatur doloribus vel iure totam impedit, beatae, nam voluptatem magnam?
+                         Itaque dicta porro molestiae non dolor totam dolorem. Labore aperiam itaque distinctio, ut harum consequatur a assumenda provident et deserunt,
+                          obcaecati praesentium. Et nisi quo laboriosam amet iste at quibusdam.
+                         </p>
+                       <p>
+                       Blanditiis iusto recusandae alias earum id, molestiae consequatur nemo. 
+                       Maiores vel provident alias possimus ducimus atque exercitationem. Asperiores repellat officiis quasi aspernatur!</p>
+                       <p>Hic quasi unde, nostrum voluptas eius vel sint excepturi! Voluptatibus minus placeat consectetur aut, distinctio nam eius quis, sit vitae soluta modi.</p>
+                    </div>
+                    <div class="row3col2">
+                       <img src="photo/52696786199391e36373fe561cb9864d.jpg_720x720q80.jpg" width="90%" alt="">
+                    </div>
+                 </div>
+
+
+
+           <div class="row4" id="service"> 
+                 <div class="services">
+                     <h1>Services</h1>
+                 </div>
+                 <div class="subservices">
+                      <div class="light">
+                        <h3>The Best Support Ever</h3>
+                      </div>
+                      <div class="response">
+                        <h3>Fully Responsive Design</h3>
+                      </div>
+                      <div class="pencil">
+                        <h3>Unlimited Layout Option</h3>
+                      </div>
+                 </div>
+           </div>
+
+
+
+
+        <div class="row5">
+             <div class="sidehead">
+                <h1>Our Skills</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem ducimus commodi minus aspernatur, beatae quis voluptatum quibusdam corporis, placeat eos saepe numquam at! Consequatur iure, possimus cum ipsam amet ea.
+                At expedita harum veniam iste distinctio iusto reiciendis non sit mollitia saepe quasi facilis officia, exercitationem excepturi labore rerum reprehenderit ex quo similique iure in perspiciatis ut voluptate repellendus. 
+               </p>
+             </div>
+             <div class="rank">
+                 <div class="rank1">
+                     <div class="one">
+                        <p>Graphics 90%</p>
+                     </div>
+                 </div>
+                 <div class="rank1">
+                    <div class="two">
+                     <p> HTML CSS 75%</p>
+                    </div>
+                </div>
+                <div class="rank1">
+                    <div class="three">
+                       <p>Wordpress 66% </p>
+                    </div>
+                </div>
+                <div class="rank1">
+                    <div class="four">
+                      <p> Marketing 88%</p>
+                    </div>
+                </div>
+             </div>
+        </div>
+
+
+
+<div class="row6" id="portfol">
+          <div class="portfolio">
+               <div class="port">
+                  <h1>Portfolio</h1>
+                </div>
+            </div> 
+              <div class="newRow1">
+                        <div class="col1">
+                            <div class="fanta1">
+                                   <img src="photo/The-Times-Dec-21-for-web.jpg"alt="" width="90%">
+                            </div>
+                            <div class="name">
+                                <h2>Travel</h2>
+                            </div>
+                        </div>
+                        <div class="col2">
+                            <div class="fanta2">
+                                <img src="photo/Atlantic-Renovation-Projects.jpg" alt="" width="90%">
+                            </div>
+                            <div class="name">
+                                <h2>Renovation</h2>
+                            </div>
+                        </div>
+                        <div class="col3">
+                            <div class="fanta3">
+                                <img src="photo/Resort-Website-developers-in-Ernakulam.jpg" alt="" width="90%">
+                           </div>
+                            <div class="name">
+                                <h2>Resort</h2>
+                            </div>
+                        </div>
+              </div>
+            <div class="newRow2">
+                <div class="col4">
+                    <div class="fant4">
+                        <img src="photo/imperial-website-psd-template.jpg" alt="" width="90%">
+                    </div>
+                    <div class="name">
+                        <h2>Fantacy</h2>
+                    </div>
+                </div>
+                <div class="col5">
+                    <div class="fanta5">
+                        <img src="photo/Chauffeur_wp_theme.jpg" alt="" width="90%">
+                    </div>
+                    <div class="name">
+                        <h2>Logistics</h2>
+                    </div>
+                </div>
+                <div class="col6">
+                    <div class="fanta6">
+                        <img src="photo/digipress_wp_theme.jpg" alt="" width="90%">
+                    </div>
+                    <div class="name">
+                        <h2>Marketing</h2>
+                    </div>
+                </div>
+            </div>
+         
+</div>
+
+
+
+
+
+
+        <div class="row7" id="contactus">
+            <div row="us">
+                <div class="contact">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4012924.123838464!2d78.28976490000001!3d10.821166349999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1697055838406!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+       <div class="row8">
+            <div class="form">
+                    <form class="form1">
+                        <div class="name1">
+                            Name:*
+                            <input type="text" name="name" placeholder="Enter your name...">
+                        </div>
+                        <div class="email">
+                            Email:*
+                            <input type="email" name="email" placeholder="Enter your email here...">
+                        </div>
+                        <div class="subject"> 
+                            Subject:
+                            <select name="slSubject">
+                                <option value="S01">HTML</option>
+                                <option value="S02">CSS</option>
+                                <option value="S03">JAVASCRIPT</option>
+                                <option value="S04">BOOTSTRAP</option>
+
+                            </select>
+                        </div>
+                    </form>
+                 <form class="form2">                
+                     <div class="msg">
+                         Message:*<br>
+                        <textarea name="txtmsg" placeholder="Enter the message" ></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" name="sentmsg" value="Send Message">
+                    </div>
+               </form>
+
+            </div>
+       </div>
+
+
+
+       <div class="beforeEnd">
+             <div class="icon">
+                  <div class="imgicon">
+                    <img src="photo/1964400_facebook_logo_media_social_icon.png" alt="">
+                  </div>
+                  <div class="imgicon">
+                    <img src="photo/1964397_logo_media_social_twitter_icon.png" alt="">
+                  </div>
+                  <div class="imgicon">
+                    <img src="photo/1964405_linkedin_logo_media_social_icon.png" alt="">
+                  </div>
+                  <div class="imgicon">
+                    <img src="photo/1964413_dribbble_logo_media_social_icon.png" alt="">
+                  </div>
+                  <div class="imgicon">
+                    <img src="photo/1964398_logo_media_rss_social_icon.png" alt="">
+                  </div>
+             </div>
+             <div class="end">
+                <div>Privacy Policy</div>
+                <div>Copyright © DreamyDesigns 2023</div>
+                <div >All Rights Reserved</div>
+             </div>
+       </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 <!-- rightcol -->
+            </div>
+             
+
+
+
+          
+            
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
