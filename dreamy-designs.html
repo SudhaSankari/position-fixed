@@ -70,7 +70,7 @@
             background-image: url(photo/wallpaper2you_402685.jpg);
             background-position: center center;
             width: 100%;
-            height: 575px;
+            height: 670px;
             background-size: cover;
             display: flex;
             flex-wrap: wrap;
@@ -169,7 +169,7 @@
     margin: auto;
     display: flex;
     flex-wrap: wrap;
-    height: 360px;
+    /* height: 320px; */
    }
    .row3col1{
     width:70%;
@@ -180,14 +180,17 @@
    }
    .row3col1 p{
     font-family: 'Rubik';
+    text-align: justify;
    }
-   .row3col2{
-    width:30%;
+   .row3col2 {
+    width: 30%;
     align-items: center;
     display: flex;
-    justify-content: center;
-
-   }
+    justify-content: flex-end;
+   
+    padding: 10px;
+}
+   
    .row4{
     width:90%;
     margin: auto;
@@ -210,9 +213,7 @@
    .subservices .light,.subservices .response,.subservices .pencil{
     width:33.3333333%;
     display: flex;
-    /* padding: 10px; */
-    /* text-align: center; */
-    /* background-color: blue; */
+   
    }
   
    .subservices .response{
@@ -558,7 +559,7 @@
     font-size: small;
 }
 .row3{
-    height: 800px;
+    height: 700px;
     
     text-align: justify;
     padding: 5px;
@@ -570,7 +571,8 @@
 }
 
 .row3col1 p {
-    font-size: small;
+    font-size: smaller;
+    margin: 0;
 }
 
 .row3col1 {
@@ -579,7 +581,10 @@
 
 .row3col2 {
     width: 100%;
-
+    justify-content: center;
+}
+.roe3col2 .img{
+    width:100%;
 }
 .row4{
     border-top: 2px solid darkblue
